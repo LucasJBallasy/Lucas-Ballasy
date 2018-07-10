@@ -1,0 +1,29 @@
+
+.block { display: block }
+.inline { display: inline }
+.inline-block { display: inline-block }
+.hide { display: none }
+
+.load {
+  opacity:0;
+  transition:.25s ease;
+
+  &.load-done {
+    opacity:1;
+  }
+
+  &.delay{
+    transition-delay:.5s;
+  }
+}
+
+.jq {
+  opacity:0;
+  transition:.25s ease;
+  margin-left:-20px;
+
+  &.preload {
+    opacity:1;
+    margin-left:0;
+  }
+}
