@@ -42,15 +42,21 @@
 
 	<link href="/main.css" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
+	<script>
+			window.addEventListener('DOMContentLoaded', function () {
+		  document.querySelector('.load').classList.add('load-done')
+		  setTimeout(function () {
+		    document.querySelector('.jq').classList.add('preload')
+		  }, 500)
+		})
+	</script>
 	<script src="https://use.typekit.net/xud4rqj.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </head>
 <body class="inline mx0">
-	<script src="/main.js"></script>
+	<!-- <script src="/main.js"></script> -->
 	<div class="content load">
 
 		<nav class="absolute center-v ml-06">
